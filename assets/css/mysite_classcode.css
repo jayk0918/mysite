@@ -1,0 +1,153 @@
+@charset "UTF-8";
+/* ***************초기화*************************** */
+/* 여백초기화 */
+body, div, ul, li, dl, dt, ol, 
+h1, h2, h3, h4, h5, h6, input, 
+fieldset, legend, p, select, 
+table, th, td, tr, textarea, 
+button, form {
+    margin: 0; padding: 0;
+}
+
+/* 자주 적용되는 폰트 등의 속성을 body에 사전 주입 가능 */
+body{
+	font-size : 12px;
+	font-family : "맑은 고딕", 돋움, 굴림;
+}
+
+/* 리스트 초기화 */
+ul, ol {list-style-type: none;}
+
+/* 링크 초기화 */
+a:link {color: #FF00FF; text-decoration: none;}     
+a:visited {color: #999999; text-decoration: overline;}      
+a:hover   {color: #0000FF; text-decoration: underline;}   
+a:active  {color: #FF0000; text-decoration: line-through;} 
+
+/* clearfix */
+.clearfix{*zoom:1;}
+.clearfix:before, .clearfix:after {display: block; content: ""; line-height: 0;}
+.clearfix:after {clear: both;}
+
+
+/* ******************레이아웃************************** */
+#wrap {
+	margin: 0px auto;
+	width: 1000px;
+}
+
+#wrap > #header {
+	padding: 10px 0px 10px 0px;
+	border-bottom: 1px solid #bfbfbf;
+}
+
+#wrap > #nav {
+	border-bottom: 1px solid #BFBFBF;
+}
+
+#wrap > #full-contents {
+	padding : 40px 20px 40px 20px;
+}
+
+/* 가로 서브메뉴 있을 때 */
+#wrap > #contents{
+	padding : 30px 0px 30px 0px;	
+}
+
+
+
+#wrap > #footer {
+	background-color: #DDDDDD;
+}
+
+
+/* ******************해더(로고  로그인,회원가입)************************** */
+#header > h1 {
+	float: left;
+	color: #79B30B;
+	font-size: 35px;
+	font-weight: bold;
+}
+
+#header ul {
+	margin: 15px 0px 0px 0px;
+	float: right;
+}
+
+#header ul>li {
+	margin: 0px 0px 0px 20px;
+	float: left;
+	font-size: 14px;
+}
+
+
+/* ******************네비(메인메뉴)************************** */
+/*#nav ul{
+	height : 30px;		 고정메뉴일때는 clearfix 대신 고정 높이값을 주는 것도 방법
+}*/
+
+#nav {
+	padding : 10px 0px 10px 0px;
+}
+
+#nav ul>li {
+	float : left;
+	width : 250px;
+	font-size : 20px;
+	font-weight :  bold;
+	text-align : center;
+	/*border : 1px solid #000000;*/
+}
+
+
+/* ***************** 컨텐츠 (서브메뉴 있을 때)************************** */
+/* aside(서브메뉴) */
+
+#contents>#aside{
+	margin : 0px 10px 0px 0px;
+	float : left;
+	width : 170px;
+}
+
+#contents>#aside>h2
+{
+	padding : 25px 0px 25px 0px;
+	/* 만약 엄격하게 height : 60px 값을 고수해야 한다면 */
+	/* height : 60px;  + */
+	/* line-height : 60px; */
+	background-color: #DDDDDD;
+	text-align : center;
+	font-size : 20px;
+}
+
+#contents>#aside>ul>li{
+	margin : 5px 0px 0px 0px;
+	padding : 8px 0px 8px 10px;
+	border : 1px solid #a6a6a6;
+	font-size : 14px;
+}
+
+/* ******************main-content************************** */
+#contents>#main-content>#main-content-header{
+	padding : 18px 0px 10px 0px;
+	border-bottom : 1px solid #BFBFBF;
+}
+
+#contents>#main-content>#main-content-header>h3{
+	font-size : 18px;
+	font-weight : bold;
+}
+
+/* ******************footer************************** */
+
+#footer div{
+	font-size : 12px;
+	text-align : center;
+	padding : 20px 0px;
+	/* padding :  */
+	/* text-height 사용 가능 */
+}
+
+
+
+
