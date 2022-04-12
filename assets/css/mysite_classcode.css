@@ -29,6 +29,11 @@ a:active  {color: #FF0000; text-decoration: line-through;}
 .clearfix:before, .clearfix:after {display: block; content: ""; line-height: 0;}
 .clearfix:after {clear: both;}
 
+/* 버튼에 '클릭'손모양 부여하기 */
+.pointer{
+	cursor : pointer;
+}
+
 
 /* ******************레이아웃************************** */
 #wrap {
